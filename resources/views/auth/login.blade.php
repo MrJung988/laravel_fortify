@@ -10,7 +10,7 @@
 
 <div class="mainContainer" method="post">
     <div class="row">
-        <form action="">
+        <form action="{{ route('login') }}" method="post">
             @csrf
             <div class="form-group">
                 <h3 class="">Login User</h3>
