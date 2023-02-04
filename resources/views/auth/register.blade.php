@@ -7,13 +7,14 @@
 @endpush
 
 @section('content')
-<div class="mainContainer">
+<div class="registerContainer">
     <div class="row">
         <form action="{{ route('register') }}" method="POST">
             @csrf
-            <div class="form-group">
-                <h3 class="">Register User</h3>
+            <div class="form-group mb-3">
+                <h3 class="text-center">Register User</h3>
             </div>
+            <hr>
             <div class="form-group mb-3">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
@@ -54,8 +55,8 @@
                 <button type="submit" class="btn btn-primary mt-2 col-12">Register</button>
             </div>
 
-            <div class="additional_link mt-2">
-                <p class="text-center">Already have an account?<a href="{{ route('login') }}"> Login</a></p>
+            <div class="additional_link mt-3">
+                <p class="text-center">Already have an account?<a href="{{ route('login') }}" class="text-decoration-none"> Login</a></p>
             </div>
         </form>
     </div>

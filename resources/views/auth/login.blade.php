@@ -8,13 +8,14 @@
 
 @section('content')
 
-<div class="mainContainer" method="post">
+<div class="loginContainer" method="post">
     <div class="row">
         <form action="{{ route('login') }}" method="post">
             @csrf
-            <div class="form-group">
-                <h3 class="">Login User</h3>
+            <div class="form-group mb-4">
+                <h3 class="text-center">Login User</h3>
             </div>
+            <hr>
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" class="form-control mb-3" placeholder="Enter your email">
@@ -23,7 +24,10 @@
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" class="form-control mb-3" placeholder="Enter your password">
             </div>
-            <button type="submit" class="btn btn-primary mt-2">Login</button>
+            <button type="submit" class="btn btn-primary mt-2 col-12">Login</button>
+            <div class="additional_link mt-3">
+                <p class="text-center">Don't have an account?<a href="{{ route('register') }}" class="text-decoration-none"> Register</a></p>
+            </div>
         </form>
     </div>
 </div>
