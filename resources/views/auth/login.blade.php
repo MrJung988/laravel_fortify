@@ -16,13 +16,15 @@
                 <h3 class="text-center">Login User</h3>
             </div>
             <hr>
-            <div class="form-group">
+            <div class="form-group mb-3">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control mb-3" placeholder="Enter your email">
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email">
+                <span class="text-danger small">@error('email') {{ $message }} @enderror</span>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-3">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password" class="form-control mb-3" placeholder="Enter your password">
+                <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password">
+                <span class="text-danger small">@error('password') {{ $message }} @enderror</span>
             </div>
             <p class="text-primary">
                 <a href="{{ route('password.request') }}" class="text-decoration-none">Forgot Password?</a>
