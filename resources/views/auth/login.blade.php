@@ -24,6 +24,9 @@
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" class="form-control mb-3" placeholder="Enter your password">
             </div>
+            <p class="text-primary">
+                <a href="{{ route('password.request') }}" class="text-decoration-none">Forgot Password?</a>
+            </p>
             <button type="submit" class="btn btn-primary mt-2 col-12">Login</button>
             <div class="additional_link mt-3">
                 <p class="text-center">Don't have an account?<a href="{{ route('register') }}" class="text-decoration-none"> Register</a></p>
