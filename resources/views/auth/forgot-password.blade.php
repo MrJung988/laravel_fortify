@@ -7,7 +7,7 @@
 @endpush
 
 @section('content')
-<div class="resetPasswordContainer">
+<div class="forgotPasswordContainer">
     <div class="row">
         <form action="{{ route('password.email') }}" method="post">
             @csrf
